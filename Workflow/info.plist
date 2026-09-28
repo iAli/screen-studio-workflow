@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.iali.screenstudio</string>
+	<key>connections</key>
+	<dict>
+		<key>103B7CD6-30B9-44C1-BD7F-267AAF12CD8E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>735D13ED-A00B-4A24-8711-0EFB7C4274ED</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>iAli</string>
+	<key>description</key>
+	<string>Control Screen Studio with Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Screen Studio</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Record Display","arg":"record-display"},{"title":"Record Window","arg":"record-window"},{"title":"Record Area","arg":"record-area"},{"title":"Finish Recording","arg":"finish-recording"},{"title":"Cancel Recording","arg":"cancel-recording"},{"title":"Restart Recording","arg":"restart-recording"},{"title":"Toggle Recording Area Cover","arg":"toggle-recording-area-cover"},{"title":"Toggle Recording Controls","arg":"toggle-recording-controls"},{"title":"Open Projects Folder","arg":"open-projects-folder"},{"title":"Open Settings","arg":"open-settings"},{"title":"Copy ZIP Project to Clipboard","arg":"copy-and-zip-project"}]</string>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Control Screen Studio with Alfred</string>
+				<key>title</key>
+				<string>Screen Studio</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>103B7CD6-30B9-44C1-BD7F-267AAF12CD8E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>screen-studio://{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>735D13ED-A00B-4A24-8711-0EFB7C4274ED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>## Screen Studio
+
+Trigger Screen Studio commands via the `ss` keyword.
+
+---
+
+⭐ If you find it useful, give it a [star on GitHub](https://github.com/iAli/screen-studio-workflow)</string>
+	<key>uidata</key>
+	<dict>
+		<key>103B7CD6-30B9-44C1-BD7F-267AAF12CD8E</key>
+		<dict>
+			<key>xpos</key>
+			<real>65</real>
+			<key>ypos</key>
+			<real>25</real>
+		</dict>
+		<key>735D13ED-A00B-4A24-8711-0EFB7C4274ED</key>
+		<dict>
+			<key>xpos</key>
+			<real>285</real>
+			<key>ypos</key>
+			<real>25</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>ss</string>
+				<key>placeholder</key>
+				<string>ss</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>26.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/iAli/screen-studio-workflow</string>
+</dict>
+</plist>
